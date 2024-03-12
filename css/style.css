@@ -1,0 +1,117 @@
+:root{
+    --marginLeft: 28px;
+    --darkGreen: rgb(57, 117, 57);
+    --almostWhite: rgb(245, 245, 245);
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+
+.left-part{
+    background-image: url("../images/bg.jpg");
+    background-size: calc(2/5 * 100vw);
+    background-repeat: no-repeat;
+    color:white;
+
+    display:flex;
+    flex-direction: column;
+
+    flex:2;
+}
+
+.logo-container{
+    background-color: rgb(0,0,0, 0.3);
+    padding: 20px;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-icon{
+    width: 100px;
+}
+
+.logo-text{
+    font-family: Norse;
+    font-size: 128px;
+}
+
+.image-author{
+    text-align: center;
+    padding: 20px;
+}
+
+a:link{
+    color:white;
+}
+a:visited{
+    color: white;
+}
+
+.right-part{
+    background-color: var(--almostWhite);
+
+    flex:3;
+    margin: auto 0;
+    align-self: center;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.form-container{
+    background-color: white;
+    padding: var(--marginLeft);
+}
+
+ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+fieldset{
+    width: 100%;
+    margin:0;
+    padding:0;
+    border: 0;
+
+    display: flex;
+    gap:48px;
+}
+
+legend{
+    font-weight:bold;
+    font-size: 24px;
+}
+
+.left-fields,
+.right-fields{
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+}
+
+button{
+    padding: 15px 60px;
+    background-color: var(--darkGreen);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+
+    margin: 20px var(--marginLeft);
+}
