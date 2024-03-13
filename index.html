@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -40,6 +40,9 @@
                                             <li>
                                                 <input type="text" id="first-name" required>
                                             </li>
+                                            <li>
+                                                <output for="first-name" id="first-name-output"> </output>
+                                            </li>
                                         </ul>
                                     </li>
                                     <li>
@@ -48,7 +51,10 @@
                                                 <label for="email">EMAIL</label>
                                             </li>
                                             <li>
-                                                <input type="email" name="email" id="email">
+                                                <input type="email" name="email" id="email" required>
+                                            </li>
+                                            <li>
+                                                <output for="email" id="email-output"> </output>
                                             </li>
                                         </ul>
                                     </li>
@@ -58,7 +64,10 @@
                                                 <label for="password">PASSWORD</label>
                                             </li>
                                             <li>
-                                                <input type="password" name="password" id="password">
+                                                <input type="password" name="password" id="password" required>
+                                            </li>
+                                            <li>
+                                                <output for="password" id="password-output"> </output>
                                             </li>
                                         </ul>
                                     </li>
@@ -72,7 +81,10 @@
                                                 <label for="last-name">LAST NAME</label>
                                             </li>
                                             <li>
-                                                <input type="text" name="lastName" id="last-name">
+                                                <input type="text" name="last-name" id="last-name" required>
+                                            </li>
+                                            <li>
+                                                <output for="last-name" id="last-name-output"> </output>
                                             </li>
                                         </ul>
                                     </li>
@@ -82,7 +94,10 @@
                                                 <label for="phone-number">PHONE NUMBER</label>
                                             </li>
                                             <li>
-                                                <input type="tel" name="phoneNumber" id="phone-number">
+                                                <input type="tel" name="phone-number" id="phone-number" required>
+                                            </li>
+                                            <li>
+                                                <output for="phone-number" id="phone-number-output"> </output>
                                             </li>
                                         </ul>
                                     </li>
@@ -92,7 +107,10 @@
                                                 <label for="confirm-password">CONFIRM PASSWORD</label>
                                             </li>
                                             <li>
-                                                <input type="text" name="confirmPassword" id="confirm-password">
+                                                <input type="password" name="confirm-password" id="confirm-password" required>
+                                            </li>
+                                            <li>
+                                                <output for="confirm-password" id="confirm-password-output"> </output>
                                             </li>
                                         </ul>
                                     </li>

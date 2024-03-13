@@ -1,7 +1,7 @@
 :root{
-    --marginLeft: 28px;
-    --darkGreen: rgb(57, 117, 57);
-    --almostWhite: rgb(245, 245, 245);
+    --marginLeft: 42px;
+    --buttonBackground: #596D48;
+    --rightPartBackground: rgb(245, 245, 245);
 }
 
 body{
@@ -18,7 +18,7 @@ body{
 
 .left-part{
     background-image: url("../images/bg.jpg");
-    background-size: calc(2/5 * 100vw);
+    background-size: 40vw 100vh;
     background-repeat: no-repeat;
     color:white;
 
@@ -52,21 +52,26 @@ body{
 .image-author{
     text-align: center;
     padding: 20px;
-}
 
-a:link{
-    color:white;
-}
-a:visited{
-    color: white;
+
+    a:link{
+        color:white;
+    }
+    a:visited{
+        color: white;
+    }
 }
 
 .right-part{
-    background-color: var(--almostWhite);
+    background-color: var(--rightPartBackground);
 
     flex:3;
     margin: auto 0;
-    align-self: center;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .italic{
@@ -75,6 +80,7 @@ a:visited{
 
 .form-container{
     background-color: white;
+    box-shadow: 0px 5px 5px rgb(226, 226, 226);
     padding: var(--marginLeft);
 }
 
@@ -94,9 +100,15 @@ fieldset{
     gap:48px;
 }
 
+.form-container-left-part,
+.form-container-right-part{
+    flex:1;
+}
+
 legend{
     font-weight:bold;
     font-size: 24px;
+    margin-bottom: 20px;
 }
 
 .left-fields,
@@ -108,10 +120,64 @@ legend{
 
 button{
     padding: 15px 60px;
-    background-color: var(--darkGreen);
+    background-color: var(--buttonBackground);
     color: white;
     border: 0;
     border-radius: 5px;
 
     margin: 20px var(--marginLeft);
+
+    font-size: 18px;
+    font-weight: bold;
+
+    box-shadow: 5px 5px 5px rgb(226, 226, 226);
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+p {
+    margin: 20px  var(--marginLeft);
+
+    font-weight: bold;
+    font-size: 18px;
+}
+
+input{
+    width: 350px;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid rgb(198, 198, 198);
+}
+
+input:focus{
+    border: 1px solid blue;
+    box-shadow: 5px 5px 5px rgb(226, 226, 226);
+}
+
+label{
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+}
+
+p:last-of-type{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+p:last-of-type > a{
+    color: var(--buttonBackground);
+    text-decoration: none;
+}
+
+#password,
+#confirm-password{
+    border: 1px solid red;
+}
+
+output{
+    color: red;
 }
